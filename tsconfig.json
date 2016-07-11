@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outFile": "app.js",
+    "noImplicitAny": true
+  },
+  "files": [
+    "src/app.ts"
+  ]
+}
