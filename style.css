@@ -1,0 +1,75 @@
+body {
+  box-sizing: border-box;
+  font-family: Cochin, serif;
+}
+* {
+  box-sizing: inherit;
+}
+
+article {
+  border: 1px solid #efefef;
+  border-radius: 1rem;
+  padding: 4vh 8vw;
+  height: 90vh;
+  width: 85vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+  background: #fff;
+
+  box-shadow: 0 0 12px #ddd;
+
+  font-size: 32px;
+
+  overflow: hidden;
+}
+
+quote {
+  overflow: scroll;
+  height: 100%;
+  display: block;
+}
+
+
+
+button {
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 1rem;
+  padding: .75rem;
+  font-size: 1.5rem;
+
+  box-shadow: 0 0 10px #bbb;
+}
+
+.target {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.top {
+  bottom: 80%;
+}
+.left {
+  right: 80%;
+  top: 10%;
+}
+.right {
+  left: 80%;
+  top: 10%;
+}
+
+nav {
+  opacity: 0;
+  transition: opacity .25s ease-in;
+  position: absolute;
+  top: 2vh;
+  z-index: 5;
+  pointer-events: none;
+}
+nav.active {
+  opacity: 1;
+  pointer-events: all;
+}
